@@ -67,8 +67,9 @@ AdminPanel --> Storage
 Откройте PowerShell или командную строку и выполните:
 
 ```
-git clone https://github.com/RiobVO/project_roote.git
-cd project_roote
+git clone https://github.com/RiobVO/telegram-support-bot.git
+cd telegram-support-bot
+
 ```
 
 ---
@@ -101,6 +102,21 @@ copy app\.env.example app\.env.dev
 python app\main.py
 ```
 
+## Установка и запуск  (Linux / macOS)
+
+```
+git clone https://github.com/RiobVO/telegram-support-bot.git
+cd telegram-support-bot
+
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+cp app/.env.example app/.env.dev
+
+python app/main.py
+```
 ---
 
 ## Конфигурация (.env)
